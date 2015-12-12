@@ -7,19 +7,20 @@ import pymongo
 def index():
 
     # connect to mongoDB
-    connection = pymongo.MongoClient('localhost', 27017)
+    #connection = pymongo.MongoClient('localhost', 27017)
 
     # attach to test database
-    db = connection.test
+    #db = connection.test
 
 
     # get handle for names collection
-    name = db.names
+    #name = db.names
 
     # find a single document
-    item = name.find_one()
+    #item = name.find_one()
 
-    return '<b>Hello %s!</b>' % item['name']
+    #return '<b>Hello %s!</b>' % item['name']
+    return '<b>Hollass</b>'
 
 
-bottle.run(host='localhost', port=8082)
+bottle.run(host='127.0.0.1', port=8080)
